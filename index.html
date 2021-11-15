@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card " id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide"><b> Pizzeria </b></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small navbtn">
+        <a href="index.html" class="w3-bar-item w3-button"><b> Home </b></a>
+        <a href="#about" class="w3-bar-item w3-button"><b> About </b></a>
+        <a href="#deals" class="w3-bar-item w3-button"><b> Deals </b></a>
+        <a href="#menu" class="w3-bar-item w3-button"><b> Menu </b></a>
+        <a href="#contact" class="w3-bar-item w3-button"><b> Contact </b></a>
+      </div>
+    </div>
+  </div>
+<br<<br>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/slideshow2.jpg" style="width:100%">
+    </div>    
+    <div class="mySlides fade">
+      <img src="images/slideshow1.jpg" style="width:100%">
+    </div>  
+    <div class="mySlides fade">
+      <img src="images/slideshow3.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <br> 
+    <div class="w3-row w3-padding-32" id="about">
+      <h1 class="w3-center w3-padding-32"><span class="w3-tag w3-round w3-wide"> OUR STORY </span></h1>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/pizza2.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+    <div class="w3-col m6 w3-padding-32">
+      <h1 class="w3-center"><b><u> Welcome to Pizzeria </u></b></h1><br>
+      <h5 class="w3-center">Tradition since 1998</h5>
+      <p class="w3-large">The Pizzeria was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+    </div>
+  </div>
+  <h1 id="deals" class="w3-row w3-center w3-padding-32"><span class="w3-tag w3-round w3-wide"> DEALS OF THE DAY </span></h1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="images/Veg Medium Pizza Meal.jpg" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>Veg Medium Pizza Meal</h2>
+            <p> Rs. 449/- </p>
+            <p><button class="button"> Add To Cart </button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images/Two Classic Veg Medium Pizza Combo (1).jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Two Classic Veg Medium Pizza Combo</h2>
+            <p> Rs. 649/- </p>
+            <p><button class="button"> Add To Cart </button></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="images/Veg Semizza Meal.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Veg Semizza Meal</h2>
+            <p> Rs. 299/- </p>
+            <p><button class="button"> Add To Cart </button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="images/Veg Half and Half.jpg" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Veg Half and Half </h2>
+            <p>Rs. 425/- </p>
+            <p><button class="button"> Add To Cart </button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+<!-- Menu Container -->
+<h1 class="w3-center w3-padding-20"  id="menu"><span class="w3-tag w3-round w3-wide"> OUR MENU </span></h1>
+<div class="w3-padding-32 w3-xxlarge">
+  <div class="w3-content">
+
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-brown"><b>Pizzas</b></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sides');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-brown"><b>Sides</b></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Deserts');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-brown"><b>Deserts</b></div>
+      </a>
+    </div>
+
+    
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white ">
+  
+    <div class="gallery">
+            <a target="_blank" href="images/ClassicCorn.jpg">
+              <img src="images/ClassicCorn.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Veg Margherita Pizza </b></h2></span>
+              <h2><span class="w3-round  w3-tag w3-green"> Rs. 375/- </span></h2>
+              <button class="btn button2"> Add to Cart </button>
+            </div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/ClassicTomato.jpg">
+              <img src="images/ClassicTomato.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Classic Tomato Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-green"> Rs. 449/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/CountryFeast.png">
+              <img src="images/CountryFeast.png" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Veg Country Feast Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-green"> Rs. 449/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/DoubleCheese.jpg">
+              <img src="images/DoubleCheese.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Double Cheese Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-green"> Rs. 499/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="images/ChickenSausage.png">
+              <img src="images/ChickenSausage.png" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Chicken Sausage Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-red"> Rs. 455/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/ChickenExotica.jpg">
+              <img src="images/ChickenExotica.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Chicken Exotica Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-red"> Rs. 499/- </span></h2>
+              <button class="btn button2"> Add to Cart </button>
+            </div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/ChickenItaliano.png">
+              <img src="images/ChickenItaliano.png" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Chicken Italiano Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag  w3-red"> Rs. 520/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="images/ChickenPepperoni.png">
+              <img src="images/ChickenPepperoni.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Chicken Pepperoni Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-red"> Rs. 545/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/ChickenSausageNTikka.png">
+              <img src="images/ChickenSausageNTikka.png" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Chicken Sausage N Tikka Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-red"> Rs. 599/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/ChickenSupreme.png">
+              <img src="images/ChickenSupreme.png" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Chicken Supreme Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-red"> Rs. 499/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/ChickenTikka.png">
+              <img src="images/ChickenTikka.png" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc"><h2><b> Chicken Tikka Pizza </b></h2></span>
+              <h2><span class="w3-round w3-tag w3-red"> Rs. 499/- </span></h2>
+              <button class="btn button2"> Add to Cart </button></div>
+          </div>
+
+         
+            </div> 
+    <div id="Sides" class="w3-container menu w3-padding-32 w3-white"> 
+      <div class="gallery">
+        <a target="_blank" href="images/CheeseGarlicBread.jpg">
+          <img src="images/CheeseGarlicBread.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Cheese Garlic Bread </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-green"> Rs. 149/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/GarlicBreadSpicySupreme.jpg">
+          <img src="images/GarlicBreadSpicySupreme.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Garlic Bread Spicy Supreme </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-green"> Rs. 199/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/GarlicBreadStix.jpg">
+          <img src="images/GarlicBreadStix.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Garlic Bread Stix </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-green"> Rs. 215/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/CheesyGarlicBreadStix.jpg">
+          <img src="images/CheesyGarlicBreadStix.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Cheesy Garlic Bread Stix </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-green"> Rs. 249/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/SpicyBakedChickenWings.jpg">
+          <img src="images/SpicyBakedChickenWings.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Spicy Baked Chicken Wings </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-red"> Rs. 299/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/TandooriPocketPaneer.jpg">
+          <img src="images/TandooriPocketPaneer.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Tandoori Pocket Paneer </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-green"> Rs. 129/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/TandooriPocketChicken.jpg">
+          <img src="images/TandooriPocketChicken.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Tandoori Pocket Chicken </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-red"> Rs. 159/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+
+    </div>
+
+
+    <div id="Deserts" class="w3-container menu w3-padding-32 w3-white">
+      <div class="gallery">
+        <a target="_blank" href="images/cake1.jpg">
+          <img src="images/cake1.jpg" alt="cake" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Chocolate Brownie </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-green"> Rs. 149/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div>
+      
+      
+      <div class="gallery">
+        <a target="_blank" href="images/cake2.jpg">
+          <img src="images/cake2.jpg" alt="cake" width="600" height="400">
+        </a>
+        <div class="desc"><h2><b> Choco Lava Cake </b></h2></span>
+          <h2><span class="w3-round w3-tag w3-green"> Rs. 129/- </span></h2>
+          <button class="btn button2"> Add to Cart </button></div>
+      </div> </div> </div></div></div>
+<div class="w3-container w3-padding-4 w3-center">
+  <h1><b> Made with Next Level Hygiene. Delivered with Next Level Safety. </b></h1>
+  <div class="w3-row">
+    <br>
+  <div class="w3-col m2">
+    <img src="images/ser1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+    <p> Real-time Temperature Tracking of Kitchen and Delivery Staff </p>
+  </div>
+  
+  <div class="w3-col m2">
+    <img src="images/ser2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+    <p> Provides an option to Choose Contactless Delivery </p>
+  </div>
+  
+  <div class="w3-col m2">
+    <img src="images/ser3.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+    <p> Everyone sanitizes his/her hands every hour. </p>
+  </div>
+  
+  <div class="w3-col m2">
+    <img src="images/ser4.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+    <p>All staff wear masks for their safety. </p>
+  </div>
+  
+  <div class="w3-col m2">
+    <img src="images/ser5.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+    <p> We ensure a clean and sanitized workstation. </p>
+  </div>
+  
+  <div class="w3-col m2">
+    <img src="images/ser6.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+    <p> Each parcel is packed and sealed in an enclosed package. </p>
+  </div>
+  </div>
+  </div>
+  <hr>
+
+    <!-- Contact Section -->
+    <h1 class="w3-center w3-padding-20 "  id="contact"><span class="w3-tag w3-round w3-wide"> Contact </span></h1>
+    <div class="w3-container">
+    <p>We offer full-service for any event, large or small. We understand your needs and we will serve the food to satisfy the biggerst criteria of them all,
+       both look and taste. Do not hesitate to contact us.</p>
+    <p>You can also contact us by phone 00553123-2323 or email pizzeria@gmail.com, or you can send us a message here:</p>
+    <form  target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-quarter">
+
+     
+        <h3> Pizzeria </h3>
+        <p>In Pizzeria, any pizza can be baked in an oven with fire bricks above the heat source, an electric
+           deck oven, a conveyor belt oven, or, in traditional style in a wood or coal-fired brick oven. </p>
+      </div>
+      <div class="w3-quarter">
+      <h3> Order Now </h3>
+      <p> Deals </p>
+      <p> Pizza </p>
+      <p> Sides </p>
+      <p> Deserts </p>
+    </div>
+  
+    <div class="w3-quarter">
+      <h3>Our Policies </h3>
+      <p> Terms & Conditions </p>
+      <p> Responsible Disclosure </p>
+      <p> FAQ & Help </p>
+    </div>
+
+    <div class="w3-quarter">
+      <h3>Follow Us On</h3>
+      <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+      
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24"> All Rights Reserved. Pizzeria by Komal </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+    // Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+
+    </script>
+    
+
+</body>
+</html>
+
+

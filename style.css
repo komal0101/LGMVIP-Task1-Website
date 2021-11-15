@@ -1,0 +1,262 @@
+
+.w3-bar .w3-button {
+    padding: 16px;
+  }
+
+  h5{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
+
+
+  h2{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1150px;
+position: relative;
+top: 80px;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.column {
+float: left;
+width: 20%;;
+margin-left: 60px;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 8px;
+}
+
+.about-section {
+margin-top: 80px;
+text-align: center;
+color: black;
+}
+
+.container {
+padding: 0 16px;
+width: 80%;
+}
+
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.title {
+color: grey;
+}
+
+.button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: seagreen;
+text-align: center;
+cursor: pointer;
+font-weight: bold;
+width: 100%;
+}
+
+.button:hover {
+background-color: #555;
+}
+
+
+.button1 {
+border: none;
+outline: 0;
+padding: 8px;
+color: white;
+background-color: seagreen;
+text-align: center;
+cursor: pointer;
+font-weight: bold;
+width: 20px;
+}
+
+.button1:hover {
+background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+  width: 100%;
+  display: block;
+}
+}
+
+
+div.gallery {
+margin: 15px;
+border: 1px solid #ccc;
+float: left;
+width: 205px;
+}
+
+div.gallery:hover {
+border: 2px solid brown;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+.btn {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 4px 8px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-weight: bold;
+font-size: 20px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+border-radius: 10px;
+cursor: pointer;
+}
+.button2 {
+background-color: white; 
+color: black; 
+font-weight: bold;
+border: 2px solid brown;
+}
+
+.button2:hover {
+background-color:brown;
+font-weight: bold;
+color: white;
+}
+
+.navbtn{
+color: brown;
+}
+
+.fa {
+padding: 15px;
+font-size: 30px;
+width: 60px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+height: 60px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
